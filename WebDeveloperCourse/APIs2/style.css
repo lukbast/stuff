@@ -1,0 +1,21 @@
+div{
+    border: 1px;
+    background-color: rgb(194, 199, 206);
+    border: 1px gray solid;
+    max-width: 200px;
+    max-height: 600px;
+    margin: 10px;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+}
+p{
+    border: 1px gray solid;
+    max-width: 200px;
+    max-height: inherit;
+}
+main{
+    display: flex;
+}

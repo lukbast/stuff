@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.NewItemDialog"
+            prefHeight="200.0" prefWidth="300.0">
+
+    <headerText>
+        Add new contact
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Enter first name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="fnTextField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Enter last name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="lnTextField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Label text="Enter phone number:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="phTextField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Label text="Enter notes:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="ntsTextField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+
+</DialogPane>

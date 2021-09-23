@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folter by Category</title>
+</head>
+<body>
+
+    <h2>Products from <%= selectedCategory%> category</h2>
+<hr>
+<form action="/products/filter" method="POST">
+Filter by catergory <select name='selectedCategory'>
+    <% for(let cat of categories) { %>
+        <option><%=cat%></option>
+    <% } %>
+</select> <button>Filter</button>
+</form>
+
+<hr>
+    
+<% for(let product of products ){ %>
+    <div>
+        <p><a href="/products/<%=product._id%>"><%=product.name%></a></p>
+        <hr>
+<%}%>
+    </div>
+
+    <p><a href="/products">go beck</a></p>
+    
+</body>
+</html>

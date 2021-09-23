@@ -1,0 +1,11 @@
+.button {
+
+-fx-background-color: green;
+-fx-text-fill: white;
+
+}
+
+#bt3 {
+-fx-background-color: black;
+-fx-text-fill: yellow;
+}

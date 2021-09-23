@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=product.name%></title>
+</head>
+<body>
+
+    <form action="/products/<%=product._id%>?_method=PUT" method="POST">
+    <h2>Edit a product</h2>
+    <div>
+        <p>New name: <input type="text" name="name" value="<%=product.name%>" ></p>
+        <p>New price: <input type="text" name="price" value="<%=product.price%>"></p>
+    <p> New category: <select name="category">
+        <% for(let category of categories) { %>
+            <option <%= product.category === category ? 'selected' : '' %> ><%=category%></option>
+        <% } %>
+    </select></p>
+    <p><button>Edit product</button></p>
+    </form>
+    <a href="/products">go beck</a>
+</div>
+</body>
+</html>
